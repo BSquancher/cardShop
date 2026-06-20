@@ -1,0 +1,57 @@
+
+body {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoHomeLink{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: teal;
+    position: fixed;
+    top: 0px ;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    text-align: left;
+    color: black;
+    vertical-align: top;
+}
+
+.homeBtn img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mainHeader{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.shopTitle{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding-left: 150px;
+  box-sizing: border-box;
+
+  }
+
+.shopTitle h1{
+  margin: 200px;
+}
