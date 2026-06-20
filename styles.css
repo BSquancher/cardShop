@@ -86,7 +86,8 @@ body {
 /* LEFT NAV */
 .left-nav {
     width: 220px;
-    min-width: 220px;
+    flex-shrink: 0;
+
 
     display: flex;
     flex-direction: column;
@@ -157,6 +158,7 @@ button:hover {
 
     width: 100%;
 
+    flex-wrap: wrap;
 
     margin: 80px auto 50px auto;
 }
@@ -172,7 +174,7 @@ button:hover {
 
 /* SEARCH INPUT */
 .search-input {
-    flex: 1;
+    flex: 1 1 400px;
 
     padding: 18px 24px;
 
@@ -181,7 +183,7 @@ button:hover {
 
     font-size: 1.1rem;
 
-    min-width: 600px;
+    min-width: 0;
 }
 
 .category-dropdown {
@@ -280,36 +282,42 @@ button:hover {
     margin-bottom: 15px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-
-    .top-header {
-      position: relative;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .search-section {
-    display: flex;
-    align-items: center;
-
-    gap: 12px;
-
-    width: 100%;
-
-
-    margin: 80px auto 50px auto;
-}
 
 }
 
 .page-layout {
-  display: flex;
-  gap: 30px;
+    display: flex;
 
-  padding:20px;
+    gap: 30px;
+
+    padding: 20px;
+
+    align-items: flex-start;
 }
 
 .main-content {
   flex: 1;
+}
+
+@media (max-width: 900px) {
+
+    .page-layout {
+        flex-direction: column;
+    }
+
+    .left-nav {
+        width: 100%;
+    }
+
+    .search-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .category-dropdown,
+    .search-btn,
+    .advanced-btn {
+        width: 100%;
+    }
+
 }
