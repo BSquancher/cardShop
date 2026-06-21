@@ -1,0 +1,6 @@
+MAGICList.json
+PokeBase1.json
+node_modules/
+.DS_Store
+**/node_modules/
+**/.env
